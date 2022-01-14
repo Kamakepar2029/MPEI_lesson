@@ -12,7 +12,7 @@ var lesson_container = document.getElementsByClassName('containers')[0];
 const renderArticle = function(xhrJSONResult){
     converter = new showdown.Converter();
     lhtml = converter.makeHtml(xhrJSONResult);
-    console.log(lhtml);
+    //console.log(lhtml);
     lesson_container.innerHTML = lhtml;
 }
 
