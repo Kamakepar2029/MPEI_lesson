@@ -11,7 +11,7 @@ const renderAllArticles = function(xhrJSONResult){
     var template = `<div class="card-body">
                         <h5 class="card-title">%author%</h5>
                         <p class="card-text">%title%</p>
-                        <a href="blog.html?lesson_name=%path%" class="btn btn-primary">Open Lesson</a>
+                        <a href="blog.html?lesson_name=%path%" class="btn btn-primary">Открыть серию уроков</a>
                     </div>`;
     for (let i in xhrJSONResult){
         let ielem = xhrJSONResult[i];

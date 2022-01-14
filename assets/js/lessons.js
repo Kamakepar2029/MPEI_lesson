@@ -11,7 +11,7 @@ var lessons = document.getElementsByClassName('content-lessons')[0];
 const renderAllArticles = function(xhrJSONResult){
     var template = `<div class="card-body">
                         <h5 class="card-title">%author%</h5>
-                        <a href="read.html?lesson_name=%path%" class="btn btn-primary">Open Lesson</a>
+                        <a href="read.html?lesson_name=%path%" class="btn btn-primary">Открыть урок</a>
                     </div>`;
     for (let i in xhrJSONResult){
         let ielem = xhrJSONResult[i];
