@@ -29,6 +29,6 @@ fetch('/lessons/'+lesson_param+'/index.json')
   .then(response => response.json())
   .then(response => setNavBar(response));
 
-fetch('/lessons/'+lesson_param+'/'+article_param)
+fetch('/lessons/'+lesson_param+'/'+article_param+'?'+makeid(6))
   .then(response => response.text())
   .then(response => renderArticle(response));
