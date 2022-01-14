@@ -8,3 +8,8 @@ nav.navbar{
     border-bottom: 1px solid #dedede;
     background: #fff !important;
 }
+
+a.navbar-brand {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

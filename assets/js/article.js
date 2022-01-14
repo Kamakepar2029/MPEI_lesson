@@ -16,6 +16,19 @@ const renderArticle = function(xhrJSONResult){
     lesson_container.innerHTML = lhtml;
 }
 
+const setNavBar = function(xhrJSONResult){
+    for (json in xhrJSONResult){
+        let ks = xhrJSONResult[json];
+        if (ks.name == article_param){
+            document.getElementsByClassName('navbar-brand')[0].innerText = ks.description;
+        }
+    }
+}
+
+fetch('/lessons/'+lesson_param+'/index.json')
+  .then(response => response.json())
+  .then(response => setNavBar(response));
+
 fetch('/lessons/'+lesson_param+'/'+article_param)
   .then(response => response.text())
   .then(response => renderArticle(response));
