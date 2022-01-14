@@ -21,6 +21,7 @@ const setNavBar = function(xhrJSONResult){
         let ks = xhrJSONResult[json];
         if (ks.name == article_param){
             document.getElementsByClassName('navbar-brand')[0].innerText = ks.description;
+            document.title = document.getElementsByClassName('navbar-brand')[0].innerText;
         }
     }
 }
