@@ -48,3 +48,14 @@ blockquote > p {
     padding-left: 10px;
     border-left: 2px solid #dedede;
 }
+
+.container-fluid {
+    flex-wrap: nowrap !important;
+}
+
+.onclick_btn_back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -33,3 +33,7 @@ fetch('/lessons/'+lesson_param+'/index.json')
 fetch('/lessons/'+lesson_param+'/'+article_param+'?'+makeid(6))
   .then(response => response.text())
   .then(response => renderArticle(response));
+
+document.getElementsByClassName('onclick_btn_back')[0].onclick = function(){
+    document.location.href='/blog.html?lesson_name='+lesson_param;
+}

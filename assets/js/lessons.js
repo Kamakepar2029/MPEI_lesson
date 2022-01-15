@@ -39,3 +39,7 @@ fetch('/lessons/index.json'+'?'+makeid(6))
 fetch('/lessons/'+lesson_param+'/index.json'+'?'+makeid(6))
   .then(response => response.json())
   .then(response => renderAllArticles(response));
+
+document.getElementsByClassName('onclick_btn_back')[0].onclick = function(){
+    document.location.href='/';
+}
