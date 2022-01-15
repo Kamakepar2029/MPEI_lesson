@@ -32,10 +32,10 @@ const setNavBar = function(xhrJSONResult){
     }
 }
 
-fetch('/lessons/index.json')
+fetch('/lessons/index.json'+'?'+makeid(6))
   .then(response => response.json())
   .then(response => setNavBar(response));
 
-fetch('/lessons/'+lesson_param+'/index.json')
+fetch('/lessons/'+lesson_param+'/index.json'+'?'+makeid(6))
   .then(response => response.json())
   .then(response => renderAllArticles(response));
