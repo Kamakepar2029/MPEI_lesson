@@ -4,4 +4,21 @@
 Правовое регулирование производственных отношений
 (договоры, физ. и юр. лица)
 
-Источники: [ГК РФ](/files/garant_grajdansky_kodeks_rf.pdf)
+Источники (PDF): [ГК РФ](/files/garant_grajdansky_kodeks_rf.pdf)
+
+Источники (Консультант +): [ГК РФ](https://www.consultant.ru/search/?q=%D0%93%D0%9A+%D0%A0%D0%A4)
+## Тема 2
+Трудовые правоотношения
+(трудовой договор)
+
+Источники: [ТК РФ](/files/TrydovoikodeksRossiiskoiFederaciio.pdf)
+
+Источники (Консультант +): [ТК РФ](https://www.consultant.ru/document/cons_doc_LAW_34683/)
+
+## Тема 3
+Правовое регулирование, ИТ Оферы
+(Законодательство IT, договоры, документооборот)
+
+Источники: [ФЗ об информации](/files/fs-ob-informazii.pdf)
+
+Источники (Консультант +): [ФЗ об информации](https://www.consultant.ru/document/cons_doc_LAW_61798/)
