@@ -43,3 +43,8 @@ a.navbar-brand {
         transform: translate(0vw, 0px);
     }
 }
+
+blockquote {
+    padding-left: 10px;
+    border-left: 2px solid #dedede;
+}
