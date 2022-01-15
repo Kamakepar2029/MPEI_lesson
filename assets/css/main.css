@@ -58,4 +58,12 @@ blockquote > p {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding-right: 10px;
+}
+
+.onclick_btn_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
