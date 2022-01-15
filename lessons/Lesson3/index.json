@@ -6,5 +6,17 @@
     {
         "name" : "lesson1.md",
         "description" : "Правовое регулирование производственных отношений"
+    },
+    {
+        "name" : "lesson2.md",
+        "description" : "Трудовые правоотношения"
+    },
+    {
+        "name" : "lesson3.md",
+        "description" : "Правовое регулирование, ИТ Оферы"
+    },
+    {
+        "name" : "lesson4.md",
+        "description" : "Правонарушения"
     }
 ]
