@@ -44,7 +44,7 @@ a.navbar-brand {
     }
 }
 
-blockquote {
+blockquote > p {
     padding-left: 10px;
     border-left: 2px solid #dedede;
 }
