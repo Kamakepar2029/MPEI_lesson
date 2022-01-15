@@ -3,4 +3,4 @@
 ## Тема 1
 Правовое регулирование производственных отношений
 (договоры, физ. и юр. лица)
-Источники: (ГК РФ)[../files/garant_grajdansky_kodeks_rf.pdf]
+Источники: [ГК РФ](../files/garant_grajdansky_kodeks_rf.pdf)
