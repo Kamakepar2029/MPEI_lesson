@@ -22,3 +22,7 @@ var params = window
        }
        return result;
     }
+
+document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(() => document.getElementsByClassName('progress_bar')[0].style = 'display:none;', 2000);
+});
