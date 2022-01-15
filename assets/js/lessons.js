@@ -13,12 +13,12 @@ const renderAllArticles = function(xhrJSONResult){
                         <h5 class="card-title">%author%</h5>
                         <a href="read.html?lesson_name=%path%" class="btn btn-primary">Открыть урок</a>
                     </div>`;
+    lessons.innerHTML = '';
     for (let i in xhrJSONResult){
         let ielem = xhrJSONResult[i];
         let doc = document.createElement('div');
         doc.className = 'card mb-3';
         doc.innerHTML = template.replace('%author%', ielem["description"]).replace("%path%", lesson_param+'&article_param='+ielem["name"]);
-        lessons.innerHTML = '';
         lessons.append(doc);
     }
 }
