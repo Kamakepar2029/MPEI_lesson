@@ -67,3 +67,14 @@ blockquote > p {
     justify-content: center;
     cursor: pointer;
 }
+
+.material-icons{
+    padding: 5px 5px;
+    transition: .3s;
+}
+
+.material-icons{
+    transition: .3s;
+    border-radius: 50%;
+    background: #e5e5e5;
+}
