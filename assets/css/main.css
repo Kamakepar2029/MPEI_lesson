@@ -73,7 +73,7 @@ blockquote > p {
     transition: .3s;
 }
 
-.material-icons{
+.material-icons:hover{
     transition: .3s;
     border-radius: 50%;
     background: #e5e5e5;
