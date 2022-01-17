@@ -56,6 +56,8 @@ blockquote > p {
     padding-left: 10px;
     border-left: 2px solid #a9a7a7;
     background: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .container-fluid {
