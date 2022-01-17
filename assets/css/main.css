@@ -47,9 +47,15 @@ a.navbar-brand {
     }
 }
 
-blockquote > p {
+/*blockquote > p {
     padding-left: 10px;
     border-left: 2px solid #dedede;
+}*/
+
+blockquote > p {
+    padding-left: 10px;
+    border-left: 2px solid #a9a7a7;
+    background: #f1f1f1;
 }
 
 .container-fluid {
