@@ -24,5 +24,5 @@ var params = window
     }
 
 document.addEventListener("DOMContentLoaded", function(){
-    setTimeout(() => document.getElementsByClassName('progress_bar')[0].style = 'display:none;', 2000);
+    setTimeout(() => document.getElementsByClassName('progress_bar_bar')[0].style = 'display:none;', 2000);
 });
