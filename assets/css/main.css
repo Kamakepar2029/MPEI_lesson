@@ -82,6 +82,10 @@ blockquote > p {
     transition: .3s;
 }
 
+img {
+    max-width: 100%;
+}
+
 .material-icons:hover{
     transition: .3s;
     border-radius: 50%;
