@@ -7,6 +7,9 @@
 nav.navbar{
     border-bottom: 1px solid #dedede;
     background: #fff !important;
+    position: sticky;
+    top: 0px;
+    z-index: 100000;
 }
 
 a.navbar-brand {
