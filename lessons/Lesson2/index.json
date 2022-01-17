@@ -6,5 +6,9 @@
     {
         "name" : "lesson2.md",
         "description" : "Урок 2. Амортизация"
+    },
+    {
+        "name" : "lesson3.md",
+        "description" : "Урок 3. Фондоотдача"
     }
 ]
