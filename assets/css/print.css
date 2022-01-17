@@ -20,4 +20,14 @@
         overflow: hidden;
         white-space: pre-wrap;
     }
+
+    nav.navbar {
+        border-bottom: 1px solid #dedede;
+        background: #fff !important;
+        position: initial;
+    }
+
+    nav.navbar .material-icons {
+        display: none;
+    }
 }
