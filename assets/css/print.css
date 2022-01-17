@@ -11,4 +11,13 @@
         url("https://db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
         url("https://db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.svg#Times New Roman") format("svg"); /* iOS 4.1- */
     }
+
+    pre {
+        background: #f7f7f7;
+        padding: 10px 20px;
+        border: 1px solid #dedede;
+        width: 100%;
+        overflow: hidden;
+        white-space: pre-wrap;
+    }
 }
