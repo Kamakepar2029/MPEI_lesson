@@ -18,5 +18,9 @@
     {
         "name" : "lesson5.md",
         "description" : "Урок 5. Оборотные фонды"
+    },
+    {
+        "name" : "lesson6.md",
+        "description": "Себестоимость"
     }
 ]
