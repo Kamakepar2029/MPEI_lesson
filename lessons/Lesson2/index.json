@@ -21,6 +21,10 @@
     },
     {
         "name" : "lesson6.md",
-        "description": "Себестоимость"
+        "description": "Урок 6. Себестоимость"
+    },
+    {
+        "name" : "lesson7.md",
+        "description": "Урок 7. Цена"
     }
 ]
