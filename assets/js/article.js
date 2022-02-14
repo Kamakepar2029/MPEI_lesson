@@ -10,7 +10,7 @@ var article_param = params["article_param"];
 var lesson_container = document.getElementsByClassName('containers')[0];
 
 const renderArticle = function(xhrJSONResult){
-    converter = new showdown.Converter();
+    converter = new showdown.Converter({extensions: ['table']});
     lhtml = converter.makeHtml(xhrJSONResult);
     //console.log(lhtml);
     lesson_container.innerHTML = lhtml;
