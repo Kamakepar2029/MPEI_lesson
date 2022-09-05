@@ -2,29 +2,5 @@
     {
         "name" : "lesson1.md",
         "description" : "Урок 1. Классификация и структура промышленно-производственных основных средств"
-    },
-    {
-        "name" : "lesson2.md",
-        "description" : "Урок 2. Амортизация"
-    },
-    {
-        "name" : "lesson3.md",
-        "description" : "Урок 3. Фондоотдача, Фондовооруженность, Фондоемкость"
-    },
-    {
-        "name" : "lesson4.md",
-        "description" : "Урок 4. Типы производства"
-    },
-    {
-        "name" : "lesson5.md",
-        "description" : "Урок 5. Оборотные фонды"
-    },
-    {
-        "name" : "lesson6.md",
-        "description": "Урок 6. Себестоимость"
-    },
-    {
-        "name" : "lesson7.md",
-        "description": "Урок 7. Цена"
     }
 ]
