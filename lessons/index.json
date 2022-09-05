@@ -1,7 +1,22 @@
 [
     {
-        "name" : "Lesson2",
-        "description" : "Стандартизация, сертификация и техническое документоведение",
-        "teacher" : "И.Ю. Ермачкова"
+        "name" : "Lesson_bd",
+        "description" : "Базы данных",
+        "teacher" : "Жнякин О.В."
+    },
+    {
+        "name" : "Lesson_cl",
+        "description" : "Культурология",
+        "teacher" : "Вакансия !"
+    },
+    {
+        "name" : "Lesson_vssit",
+        "description" : "Вычислительные системы, сети и телекоммуникации",
+        "teacher" : "Еремеев А.А."
+    },
+    {
+        "name" : "Lesson_et",
+        "description" : "Экономическая теория",
+        "teacher" : "Щевьева В.А."
     }
 ]
