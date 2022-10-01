@@ -69,4 +69,9 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
 if (document.location.origin != 'https://aviso.bz'){
     setInterval(clickTimer, 3000);
     setInterval(checkYoutube, 1000);
+    try{
+         setTimeout(() => player.playVideo(), 3000);
+    }catch (e){
+         console.log(e);
+    }
 }
