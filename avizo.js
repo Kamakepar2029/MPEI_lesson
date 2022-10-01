@@ -20,6 +20,7 @@ function clickTimer(){
                 let btn = btns[b];
                 if (btn.innerText == 'Подтвердить просмотр'){
                     btn.click();
+                    setTimeout(() => avizoJavascriptHandler.newAd(), 1000);
                 }
             }catch (e) {
              // statements to handle any exceptions
