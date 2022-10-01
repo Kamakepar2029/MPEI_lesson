@@ -105,7 +105,13 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
 }
 
 if (document.location.origin != 'https://aviso.bz'){
-    setInterval(clickTimer, 3000);
-    setInterval(checkYoutube, 1000);
-    setTimeout(() => console.log(nums = document.querySelector('#timer-tr-block').innerText.split('\t')[0]) ,3000); 
+    if (document.location.origin == 'https://youtube.com'){
+         let al = document.createElement('a');
+         al.href="https://aviso.bz/work-youtube";
+         al.click();
+    }else{
+         setInterval(clickTimer, 3000);
+         setInterval(checkYoutube, 1000);
+         setTimeout(() => console.log(nums = document.querySelector('#timer-tr-block').innerText.split('\t')[0]) ,3000); 
+    }
 }
