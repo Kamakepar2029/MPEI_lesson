@@ -40,6 +40,9 @@ function getYoutubeLink(){
 
 function checkYoutube(){
     let block = document.querySelector('#capcha-tr-block');
+    if (player.getPlayerState() != 1){
+         player.playVideo();
+    }
     if (document.querySelector('#timer-tr-block').innerText.split('\t')[0] == '0'){
         document.querySelector('.extension_enabled').innerHTML = "Redirecting...";
          avizoJavascriptHandler.youtubeReady();
@@ -84,9 +87,4 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
 if (document.location.origin != 'https://aviso.bz'){
     setInterval(clickTimer, 3000);
     setInterval(checkYoutube, 1000);
-    try{
-         setTimeout(() => player.playVideo(), 3000);
-    }catch (e){
-         console.log(e);
-    }
 }
