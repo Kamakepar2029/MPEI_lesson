@@ -64,11 +64,13 @@ function checkYoutube(){
                    al.click(); 
               }
          }
+         /*
          if (Number(document.querySelector('#timer-tr-block').innerText.split('\t')[0]) > 30){
               let al = document.createElement('a');
                    al.href="https://aviso.bz/work-youtube";
-                   al.click(); 
+                   al.click();
          }
+         */
          console.log('Everything ok');
     }
 }
