@@ -4,6 +4,7 @@ extension.innerHTML = '<h1 style="text-align: center;padding-bottom: 7px;font-si
 document.body.append(extension);
 
 try{
+document.querySelector('#ads-link-516440').remove();
 var youtubes = document.querySelector('#capcha-tr-block').getAttribute('style');
 }catch (e){
      console.log(e);
@@ -60,7 +61,8 @@ function clickTimer(){
                 let btn = btns[b];
                 if (btn.innerText == 'Подтвердить просмотр'){
                     btn.click();
-                    setTimeout(() => avizoJavascriptHandler.newAd(), 1000);
+                    avizoJavascriptHandler.newAd();
+                    document.location.href = 'https://aviso.bz/work-youtube';
                 }
             }catch (e) {
              // statements to handle any exceptions
