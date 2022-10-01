@@ -1,7 +1,7 @@
 var extension = document.createElement('div');
 extension.setAttribute('style', "position: fixed;left: 0px;bottom: 0px;z-index: 1000000000;background: #fff;padding: 10px 20px;border-radius: 5px;font-family: 'Roboto', sans-serif;");
 extension.innerHTML = '<h1 style="text-align: center;padding-bottom: 7px;font-size: 20px;"> Aviso Autosurf</h1><div class="extension_enabled">Extension: <green style="border: 1px solid #01a101;background: #00c700;color: white;border-radius: 10px;padding: 4px 18px;">enabled</green></div>';
-setTimeout(() => document.documentElement.append(extension), 2000);
+document.documentElement.append(extension);
 
 try{
 document.querySelector('#ads-link-516440').remove();
@@ -47,7 +47,10 @@ function checkYoutube(){
     }
     if (document.querySelector('#timer-tr-block').innerText.split('\t')[0] == '0'){
         document.querySelector('.extension_enabled').innerHTML = "Redirecting...";
-         avizoJavascriptHandler.youtubeReady();
+         let al = document.createElement('a');
+         al.href="https://aviso.bz/work-youtube";
+         al.click();
+         avizoJavascriptHandler.youtubeReady()
     }else{
          console.log('Everything ok');
     }
