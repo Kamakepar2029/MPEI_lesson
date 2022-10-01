@@ -1,4 +1,5 @@
 function getYoutubeLink(){
+     let me = document.querySelector('#contentwrapper');
     let links = me.querySelectorAll('.work-serf');
     for (let l in links){
         try{
