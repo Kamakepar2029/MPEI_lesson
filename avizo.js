@@ -12,6 +12,7 @@ function getYoutubeLink(){
     return false;
 }
 
+
 function clickTimer(){
     try{
         let btns = document.documentElement.querySelector('frameset').querySelector('frame').contentDocument.querySelectorAll('a');
