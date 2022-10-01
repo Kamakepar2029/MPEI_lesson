@@ -5,6 +5,7 @@ setTimeout(() => document.documentElement.append(extension), 2000);
 
 try{
 document.querySelector('#ads-link-516440').remove();
+document.querySelector('.frame_table').append(extension);
 var youtubes = document.querySelector('#capcha-tr-block').getAttribute('style');
 }catch (e){
      console.log(e);
