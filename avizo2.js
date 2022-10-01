@@ -13,6 +13,13 @@ function getYoutubeLink(){
     return false;
 }
 
+function checkYoutube(){
+    let block = document.querySelector('#capcha-tr-block');
+    if (block.style != 'display:none;'){
+        avizoJavascriptHandler.youtubeReady();
+    }
+}
+
 
 function clickTimer(){
     try{
@@ -53,4 +60,5 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
 
 if (document.location.origin != 'https://aviso.bz'){
     setInterval(clickTimer, 3000);
+    setInterval(checkYoutube, 1000);
 }
