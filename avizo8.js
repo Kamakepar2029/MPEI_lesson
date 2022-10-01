@@ -16,8 +16,8 @@ function randomIntFromInterval(min, max) { // min and max included
 function getYoutubeLink(){
      let me = document.querySelector('#contentwrapper');
     let links = me.querySelectorAll('.work-serf');
-    let index = 0;
-    let random = randomIntFromInterval(0, 2);
+    let index = 1;
+    let random = randomIntFromInterval(1, 3);
     let lastnormal = '';
     for (let l in links){
         try{
@@ -32,7 +32,7 @@ function getYoutubeLink(){
         }catch{
         }
     }
-    if (index < 1){
+    if (index < 3){
          return lastnormal;
     }
     return false;
