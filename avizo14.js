@@ -3,6 +3,9 @@ extension.setAttribute('style', "position: fixed;left: 0px;bottom: 0px;z-index: 
 extension.innerHTML = '<h1 style="text-align: center;padding-bottom: 7px;font-size: 20px;"> Aviso Autosurf</h1><div class="extension_enabled">Extension: <green style="border: 1px solid #01a101;background: #00c700;color: white;border-radius: 10px;padding: 4px 18px;">enabled</green></div>';
 document.documentElement.append(extension);
 
+var nums = '';
+const start = Date.now();
+
 try{
 document.querySelector('#ads-link-516440').remove();
 document.querySelector('.frame_table').append(extension);
@@ -50,8 +53,17 @@ function checkYoutube(){
          let al = document.createElement('a');
          al.href="https://aviso.bz/work-youtube";
          al.click();
-         avizoJavascriptHandler.youtubeReady()
+         avizoJavascriptHandler.youtubeReady();
     }else{
+         if (document.querySelector('#timer-tr-block').innerText.split('\t')[0] == nums){
+              const millis = Date.now() - start;
+              secondss = Math.floor(millis / 1000);
+              if (secondss > 20){
+                  let al = document.createElement('a');
+                   al.href="https://aviso.bz/work-youtube";
+                   al.click(); 
+              }
+         }
          console.log('Everything ok');
     }
 }
@@ -82,15 +94,18 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
     let me = document.querySelector('#contentwrapper');
         me.querySelectorAll('.work-serf')[1].querySelector('a').click();
         setTimeout(() => me.querySelectorAll('.work-serf')[1].querySelector('a').click(), 2000); 
+        setTimeout(() => me.querySelectorAll('.work-serf')[1].querySelector('a').click(), 4000); 
 }
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
     var youtube = getYoutubeLink();
         youtube.querySelector('td:nth-child(2)').querySelector('span').click();
         setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 2000);
+        setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 4000);
 }
 
 if (document.location.origin != 'https://aviso.bz'){
     setInterval(clickTimer, 3000);
     setInterval(checkYoutube, 1000);
+    setTimeout(() => console.log(nums = document.querySelector('#timer-tr-block').innerText.split('\t')[0]) ,3000); 
 }
