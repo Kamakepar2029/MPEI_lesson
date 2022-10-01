@@ -3,6 +3,11 @@ extension.setAttribute('style', "position: fixed;left: 0px;bottom: 0px;z-index: 
 extension.innerHTML = '<h1 style="text-align: center;padding-bottom: 7px;font-size: 20px;"> Aviso Autosurf</h1><div class="extension_enabled">Extension: <green style="border: 1px solid #01a101;background: #00c700;color: white;border-radius: 10px;padding: 4px 18px;">enabled</green></div>';
 document.body.append(extension);
 
+try{
+var youtubes = document.querySelector('#capcha-tr-block').getAttribute('style');
+}catch (e){
+     console.log(e);
+}
 function getYoutubeLink(){
      let me = document.querySelector('#contentwrapper');
     let links = me.querySelectorAll('.work-serf');
@@ -20,10 +25,11 @@ function getYoutubeLink(){
 
 function checkYoutube(){
     let block = document.querySelector('#capcha-tr-block');
-    if (block.getAttribute('style').split('display:none').length > 1){
+    if (block.getAttribute('style') == youtubes){
         console.log('Everything ok');
     }else{
          avizoJavascriptHandler.youtubeReady();
+         document.write('Youtube ready.');
     }
 }
 
