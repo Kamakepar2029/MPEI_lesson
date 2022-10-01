@@ -40,11 +40,11 @@ function getYoutubeLink(){
 
 function checkYoutube(){
     let block = document.querySelector('#capcha-tr-block');
-    if (block.getAttribute('style') == youtubes){
-        console.log('Everything ok');
-    }else{
-         document.querySelector('.extension_enabled').innerHTML = "Redirecting...";
+    if (document.querySelector('#timer-tr-block').innerText.split('\t')[0] == '0'){
+        document.querySelector('.extension_enabled').innerHTML = "Redirecting...";
          avizoJavascriptHandler.youtubeReady();
+    }else{
+         console.log('Everything ok');
     }
 }
 
