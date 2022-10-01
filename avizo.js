@@ -34,8 +34,8 @@ function clickTimer(){
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
     let me = document.querySelector('#contentwrapper');
-        me.querySelector('.work-serf').querySelector('a').click();
-        setTimeout(() => me.querySelector('.work-serf').querySelector('a').click(), 2000); 
+        me.querySelectorAll('.work-serf')[1].querySelector('a').click();
+        setTimeout(() => me.querySelectorAll('.work-serf')[1].querySelector('a').click(), 2000); 
 }
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
