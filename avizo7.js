@@ -8,17 +8,32 @@ var youtubes = document.querySelector('#capcha-tr-block').getAttribute('style');
 }catch (e){
      console.log(e);
 }
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 function getYoutubeLink(){
      let me = document.querySelector('#contentwrapper');
     let links = me.querySelectorAll('.work-serf');
+    let index = 0;
+    let random = randomIntFromInterval(0, 2);
+    let lastnormal = '';
     for (let l in links){
         try{
             let link = links[l];
             if (link.querySelector('.serf-text').innerText == 'Просмотр видеоролика'){
-                return link;
+                lastnormal = link;
+                if (random == index){
+                     return link;
+                }
+                index +=1;
             }
         }catch{
         }
+    }
+    if (index < 1){
+         return lastnormal;
     }
     return false;
 }
