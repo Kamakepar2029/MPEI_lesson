@@ -33,7 +33,7 @@ function clickTimer(){
 }
 
 let extension = document.createElement('div');
-xtension.setAttribute('style', "position: fixed;left: 0px;bottom: 0px;z-index: 1000000;background: #fff;padding: 10px 20px;border-radius: 5px;font-family: 'Roboto', sans-serif;");
+extension.setAttribute('style', "position: fixed;left: 0px;bottom: 0px;z-index: 1000000;background: #fff;padding: 10px 20px;border-radius: 5px;font-family: 'Roboto', sans-serif;");
 extension.innerHTML = '<h1 style="text-align: center;padding-bottom: 7px;font-size: 20px;"> Aviso Autosurf</h1><div class="extension_enabled">Extension: <green style="border: 1px solid #01a101;background: #00c700;color: white;border-radius: 10px;padding: 4px 18px;">enabled</green></div>';
 document.body.append(extension);
 
