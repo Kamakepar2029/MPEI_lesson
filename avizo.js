@@ -30,13 +30,13 @@ function clickTimer(){
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
     let me = document.querySelector('#contentwrapper');
         me.querySelector('.work-serf').querySelector('a').click();
-        setTimeout(me.querySelector('.work-serf').querySelector('a').click, 2000); 
+        setTimeout(() => me.querySelector('.work-serf').querySelector('a').click(), 2000); 
 }
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
     var youtube = getYoutubeLink();
         youtube.querySelector('td:nth-child(2)').querySelector('span').click();
-        setTimeout(youtube.querySelector('td:nth-child(2)').querySelector('span').click, 2000);
+        setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 2000);
 }
 
 if (document.location.origin != 'https://aviso.bz'){
