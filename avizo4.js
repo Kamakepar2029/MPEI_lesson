@@ -21,7 +21,9 @@ function getYoutubeLink(){
 function checkYoutube(){
     let block = document.querySelector('#capcha-tr-block');
     if (block.getAttribute('style').split('display:none').length > 1){
-        avizoJavascriptHandler.youtubeReady();
+        console.log('Everything ok');
+    }else{
+         avizoJavascriptHandler.youtubeReady();
     }
 }
 
