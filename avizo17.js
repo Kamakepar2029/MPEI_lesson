@@ -52,7 +52,7 @@ function checkYoutube(){
         document.querySelector('.extension_enabled').innerHTML = "Redirecting...";
          let al = document.createElement('a');
          al.href="https://aviso.bz/work-youtube";
-         al.click();
+         setTimeout(() => al.click(), 1000);
          avizoJavascriptHandler.youtubeReady();
     }else{
          if (document.querySelector('#timer-tr-block').innerText.split('\t')[0] == nums){
@@ -61,14 +61,14 @@ function checkYoutube(){
               if (secondss > 20){
                   let al = document.createElement('a');
                    al.href="https://aviso.bz/work-youtube";
-                   al.click(); 
+                   setTimeout(() => al.click(), 1000); 
               }
          }
          /*
          if (Number(document.querySelector('#timer-tr-block').innerText.split('\t')[0]) > 30){
               let al = document.createElement('a');
                    al.href="https://aviso.bz/work-youtube";
-                   al.click();
+                   setTimeout(() => al.click(), 1000);
          }
          */
          console.log('Everything ok');
