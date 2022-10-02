@@ -7,8 +7,8 @@ var nums = '';
 const start = Date.now();
 
 try{
-document.querySelector('#ads-link-516440').remove();
 document.querySelector('.frame_table').append(extension);
+document.querySelector('#serf-link-48577').remove();
 var youtubes = document.querySelector('#capcha-tr-block').getAttribute('style');
 }catch (e){
      console.log(e);
@@ -27,12 +27,19 @@ function getYoutubeLink(){
     for (let l in links){
         try{
             let link = links[l];
+            try{
+               let isLinkActive = (link.getAttribute('data-status') == "inactive");
+            }catch (e){
+               let isLinkActive = false;
+            }
             if (link.querySelector('.serf-text').innerText == 'Просмотр видеоролика'){
-                lastnormal = link;
-                if (random == index){
-                     return link;
+                if (isLinkActive == false){
+                     lastnormal = link;
+                     if (random == index){
+                          return link;
+                     }
+                     index +=1;
                 }
-                index +=1;
             }
         }catch{
         }
