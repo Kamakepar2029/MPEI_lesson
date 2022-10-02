@@ -7,8 +7,8 @@ var nums = '';
 const start = Date.now();
 
 try{
-document.querySelector('.frame_table').append(extension);
 document.querySelector('#serf-link-48577').remove();
+document.querySelector('.frame_table').append(extension);
 var youtubes = document.querySelector('#capcha-tr-block').getAttribute('style');
 }catch (e){
      console.log(e);
