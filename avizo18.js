@@ -113,6 +113,7 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
     var youtube = getYoutubeLink();
+     console.log(youtube);
         youtube.querySelector('td:nth-child(2)').querySelector('span').click();
         setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 2000);
         setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 4000);
