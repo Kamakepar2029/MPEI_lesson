@@ -18,6 +18,14 @@ function randomIntFromInterval(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+function checkAvailibility(){
+     if (document.location.href.split('/go/view-video.php').length > 1){
+          let al = document.createElement('a');
+         al.href="https://aviso.bz/work-youtube";
+         setTimeout(() => al.click(), 1000);
+     }
+}
+
 function getYoutubeLink(){
      let me = document.querySelector('#contentwrapper');
     let links = me.querySelectorAll('.work-serf');
@@ -27,19 +35,14 @@ function getYoutubeLink(){
     for (let l in links){
         try{
             let link = links[l];
-            try{
-               let isLinkActive = (link.getAttribute('data-status') == "inactive");
-            }catch (e){
-               let isLinkActive = false;
-            }
             if (link.querySelector('.serf-text').innerText == 'Просмотр видеоролика'){
-                if (isLinkActive == false){
+                
                      lastnormal = link;
                      if (random == index){
                           return link;
                      }
                      index +=1;
-                }
+                
             }
         }catch{
         }
@@ -117,6 +120,10 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
         youtube.querySelector('td:nth-child(2)').querySelector('span').click();
         setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 2000);
         setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 4000);
+}
+
+if (document.location.href.split('#')[0].split('/go/view-video.php').length > 1){
+     setTimeout(checkAvailibility, 15000);
 }
 
 if (document.location.origin != 'https://aviso.bz'){
