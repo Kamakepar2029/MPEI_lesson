@@ -123,7 +123,7 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
 }
 
 if (document.location.href.split('#')[0].split('/go/view-video.php').length > 1){
-     setTimeout(checkAvailibility, 15000);
+     setTimeout(checkAvailibility, 2000);
 }
 
 if (document.location.origin != 'https://aviso.bz'){
