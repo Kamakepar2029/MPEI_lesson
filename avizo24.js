@@ -116,9 +116,14 @@ function clickTimer(){
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
     ping('work-surf');
     let me = document.querySelector('#contentwrapper');
-        me.querySelectorAll('.work-serf')[1].querySelector('a').click();
-        setTimeout(() => me.querySelectorAll('.work-serf')[1].querySelector('a').click(), 2000); 
-        setTimeout(() => me.querySelectorAll('.work-serf')[1].querySelector('a').click(), 4000); 
+        if (me.querySelectorAll('.work-serf').length > 3){
+            let gNumber = randomIntFromInterval(0,3);
+        }else{
+            let gNumber = 1;
+        }
+        me.querySelectorAll('.work-serf')[gNumber].querySelector('a').click();
+        setTimeout(() => me.querySelectorAll('.work-serf')[gNumber].querySelector('a').click(), 2000); 
+        setTimeout(() => me.querySelectorAll('.work-serf')[gNumber].querySelector('a').click(), 4000); 
 }
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
