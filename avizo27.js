@@ -55,10 +55,7 @@ function getYoutubeLink(){
 }
 
 function ping(msf){
-if (localStorage.pingSent == 'false'){
 avizoJavascriptHandler.ping(msf);
-localStorage.pingSent = 'true';
-}
 }
 
 function checkYoutube(){
