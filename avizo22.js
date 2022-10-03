@@ -53,9 +53,14 @@ function getYoutubeLink(){
     return false;
 }
 
+function ping(){
+avizoJavascriptHandler.ping();
+}
+
 function checkYoutube(){
     let block = document.querySelector('#capcha-tr-block');
     if (player.getPlayerState() != 1){
+         ping();
          player.playVideo();
     }
     if (document.querySelector('#timer-tr-block').innerText.split('\t')[0] == '0'){
@@ -88,6 +93,7 @@ function checkYoutube(){
 
 function clickTimer(){
     try{
+        ping();
         let btns = document.documentElement.querySelector('frameset').querySelector('frame').contentDocument.querySelectorAll('a');
         for (let b in btns){
             try{
@@ -108,6 +114,7 @@ function clickTimer(){
 }
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
+    ping();
     let me = document.querySelector('#contentwrapper');
         me.querySelectorAll('.work-serf')[1].querySelector('a').click();
         setTimeout(() => me.querySelectorAll('.work-serf')[1].querySelector('a').click(), 2000); 
@@ -115,7 +122,8 @@ if (document.location.href.split('#')[0] == 'https://aviso.bz/work-serf'){
 }
 
 if (document.location.href.split('#')[0] == 'https://aviso.bz/work-youtube'){
-    var youtube = getYoutubeLink();
+     ping();
+     var youtube = getYoutubeLink();
      console.log(youtube);
         youtube.querySelector('td:nth-child(2)').querySelector('span').click();
         setTimeout(() => youtube.querySelector('td:nth-child(2)').querySelector('span').click(), 2000);
