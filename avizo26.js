@@ -5,7 +5,7 @@ document.documentElement.append(extension);
 
 var nums = '';
 const start = Date.now();
-var pingSent = false;
+localStorage.pingSent = 'false';
 
 try{
 document.querySelector('#serf-link-48577').remove();
@@ -55,9 +55,9 @@ function getYoutubeLink(){
 }
 
 function ping(msf){
-if !(pingSent){
+if (localStorage.pingSent == 'false'){
 avizoJavascriptHandler.ping(msf);
-pingSent= true;
+localStorage.pingSent = 'true';
 }
 }
 
