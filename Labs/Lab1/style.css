@@ -1,0 +1,136 @@
+@import url('http://fonts.cdnfonts.com/css/calibri-light');
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+img {
+    max-width: 500px;
+    float: left;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e9e9e9;
+}
+
+body {
+    max-width: 695px;
+    background: #fff;
+    min-height: 100vh;
+    padding: 10px 50px;
+    font-family: 'Calibri Light', sans-serif;
+    margin: 0px;
+    font-size: 18px;
+}
+
+h1.title {
+    text-align: left;
+    color: red;
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+center img {
+    max-width: 280px;
+}
+
+p {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+img[src="left_image.jpg"] {
+    max-width: 475px;
+    margin-left: -50px;
+    margin-right: 10px;
+}
+
+ak {}
+
+p.blue {
+    color: #1fc8ff;
+}
+
+p.right {
+    text-align: right;
+    font-size: 16px;
+    margin-left: 135px;
+}
+
+p.title_sn {
+    font-weight: bold;
+    font-size: 21px;
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    border-spacing: unset;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+}
+
+td:nth-child(1) {
+    flex-grow: 1;
+    width: 425px;
+    background: #e7faff;
+}
+
+td.nd {
+    flex-grow: 1;
+    width: 40px;
+    background: yellow;
+}
+
+body > * {
+    margin-left: 50px;
+}
+
+img[src="logo.png"] {
+    border: 3px solid #0074ff;
+}
+
+green {
+    color: green;
+    font-weight: bold;
+}
+
+divider {
+    width: 92%;
+    background: #b10000;
+    height: 5px;
+    display: flex;
+    box-shadow: -2px 3px 7px 1px gray;
+}
+
+p.second_title {
+    font-weight: bold;
+}
