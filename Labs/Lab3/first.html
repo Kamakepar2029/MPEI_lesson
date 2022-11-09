@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Зарегистировать заявку на доступ</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="left_form">
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Ваше имя" name="name" maxlength="17">
+                    <input type="text" placeholder="Ваша фамилия" name="sname" maxlength="17">
+                    <input type="text" placeholder="Введите имя пользователя" name="uname" maxlength="10">
+                    <input type="password" placeholder="Введите пароль" name="password">
+                    <label for="selectId">Выберите тип заявки на доступ</label>
+                    <select id="selectID" name="issuetype" disabled>
+                        <option value="0">Доступ к VPN</option>
+                        <option value="1">Доступ к ПК</option>
+                        <option value="2" selected>Доступ к серверу</option>
+                    </select>
+                    <label for="selectFor">Доступ нужен:</label>
+                    <input type="radio" id="selectFor" name="issuefor" value="Me"> Мне
+                    <input type="radio" name="issuefor" value="Other"> Коллеге
+                    <label for="additionalInfo">Допишите еще что-нибудь, если считаете нужным</label>
+                    <textarea id="additionalInfo" name="additionalinfo" rows="10" placeholder="Дополнительная информация по заявке"></textarea>
+                    <label for="licenseRead">
+                        Вам нужно подтвердить, что вы согласны с условиями выполнения заявки
+                    </label>
+                    <textarea id="licenseRead" readonly aria-readonly="true" cols="30" wrap="soft">Заявка будет выполнена полностью в том случае, если ничего не противоречит ее выполнению, указанной вами учетной записи будут выданы права...</textarea>
+                    <input type="checkbox" name="licenseagree"> Согласен
+                    <div class="buttons">
+                        <input type="submit" value="Отправить заявку">
+                        <input type="reset" value="Заполнить заново">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <style>
+            form {max-width: 365px;}
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                min-width: 100vw;
+                margin: 0px;
+                background: #009edb;
+            }
+
+            main.main {
+                background: #fff;
+                padding: 20px 25px;
+            }
+
+            input[type="text"] {
+                padding: 10px 20px;
+                border: 1px solid #dedede;
+                margin: 4px 0px;
+                width: calc(100% - 40px);
+                outline: none;
+            }
+
+            input[type="password"] {
+                padding: 10px 20px;
+                border: 1px solid #dedede;
+                margin: 4px 0px;
+                width: calc(100% - 40px);
+                outline: none;
+                margin-bottom: 15px;
+            }
+
+            select#selectID {
+                padding: 10px 20px;
+                border: 1px solid #dedede;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            option {
+                padding: 10px 20px;
+                background: #fff;
+                border: 1px solid #dedede;
+            }
+
+            label {
+                display: flex;
+            }
+
+            textarea#additionalInfo {
+                width: calc(100% - 40px);
+                border: 1px solid #dedede;
+                margin: 10px 0px;
+                outline: none;
+                padding: 10px 20px;
+            }
+
+            textarea#licenseRead {border: 1px solid #dedede;}
+
+            .buttons > input {
+                border: none;
+                padding: 10px 20px;
+                color: #fff;
+                flex-grow: 1;
+            }
+
+            .buttons {
+                display: flex;
+            }
+
+            input[type="reset"] {
+                margin-left: 5px;
+                background: red;
+            }
+
+            input[type="submit"] {
+                background: #00c300;
+                margin-right: 5px;
+            }
+        </style>
+    </body>
+</html>

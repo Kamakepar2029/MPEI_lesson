@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Создание аккаунта в графическом веб приложении</title>
+    </head>
+    <body>
+        <form action="#" method="POST">
+            <div class="title">Сделайте аккаунт, чтобы продолжить</div>
+            <div class="input">Количество лет: <input type="number" placeholder="18"/></div>
+            <div class="input">Величина шрифта: <input type="range" min="16" max="32" value="18"/></div>
+            <div class="input">Дата рождения: <input type="date" value="2022-11-18"/></div>
+            <div class="input">Основной цвет темы: <input type="color"/></div>
+            <div class="input">Поиск: <input type="search"></div>
+            <div class="input">Ваш уровень знаний: <datalist><option>Новичок</option><option>Любитель</option><option>Эксперт</option></datalist></div>
+            <div class="input">Ваш номер телефона: <input type="tel"></div>
+            <div class="input">Ваш E-Mail: <input type="e-mail"></div>
+            <div class="input">Ссылка на ваше портфолио: <input type="url"></div>
+            <div class="input"><output>Если все верно, то нажмите продолжить</output></div>
+            <input type="submit" value="Продолжить">
+        </form>
+        <style>
+            body {display: flex;align-items: center;justify-content: center;height: 100vh;width: 100vw;font-family: 'Roboto', sans-serif;}
+
+            form {
+                display: flex;
+                flex-direction: column;
+                border: #fff;
+                max-width: 410px;
+                padding: 25px 30px;
+                border: 1px solid #dedede;
+            }
+
+            input {
+                padding: 5px 10px;
+                border: 1px solid #dedede;
+                flex-grow: 1;
+            }
+
+            .input {
+                margin: 5px 0px;
+                display: flex;
+                align-items: center;
+            }
+
+            .input > * {
+            }
+
+            .title {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            datalist {
+                padding: 5px 10px;
+                border: 1px solid #dedede;
+                flex-grow: 1;
+            }
+
+            input[type="submit"] {
+                background: #dedede;
+                padding: 10px 20px;
+            }
+        </style>
+    </body>
+</html>
