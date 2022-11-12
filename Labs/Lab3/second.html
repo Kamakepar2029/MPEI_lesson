@@ -13,7 +13,7 @@
             <div class="input">Поиск: <input type="search" required></div>
             <div class="input">Ваш уровень знаний: <input type="text" list="modules" placeholder="Выберите уровень знаний" required/><datalist id="modules"><option>Новичок</option><option>Любитель</option><option>Эксперт</option></datalist></div>
             <div class="input">Ваш номер телефона: <input type="tel" required></div>
-            <div class="input">Ваш E-Mail: <input type="e-mail" required></div>
+            <div class="input">Ваш E-Mail: <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required></div>
             <div class="input">Ссылка на ваше портфолио: <input type="url" required></div>
             <div class="input"><output>Если все верно, то нажмите продолжить</output></div>
             <input type="submit" value="Продолжить">
